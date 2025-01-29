@@ -35,6 +35,6 @@ Antes de iniciar, certifique-se de ter os seguintes requisitos instalados:
 
 ## 📄 Licença
 
-- Esse projeto está sob a licença MIT - acesse os detalhes [LICENSE.md](https://github.com/link_da_licenca)
+- Esse projeto está sob a licença MIT - acesse os detalhes [LICENSE.md](https://github.com/angelodesenvolvedor/LinkTree/tree/master?tab=MIT-1-ov-file)
 
 
