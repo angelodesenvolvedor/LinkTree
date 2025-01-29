@@ -1,4 +1,4 @@
-# LinkTree - Angelo Silvano
+# LinkTree
 
 Minha página LinkTree com links para minhas redes sociais, portfólio e mais. Conecte-se comigo!
 
@@ -17,13 +17,12 @@ Antes de iniciar, certifique-se de ter os seguintes requisitos instalados:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/angelodesenvolvedor/linktree.git
+   git clone https://github.com/angelodesenvolvedor/LinkTree.git
    ```
 2. Acesse a pasta do projeto:
    ```bash
-   cd linktree
+   cd LinkTree
    ```
-3. Abra o arquivo `index.html` no navegador.
 
 ## 📦 Tecnologias usadas
 
@@ -31,23 +30,12 @@ Antes de iniciar, certifique-se de ter os seguintes requisitos instalados:
 - TailwindCSS
 - FontAwesome
 
-## 🛠️ Estrutura do Projeto
+## 👷 Autor
 
-```
-linktree/
-│── css/
-│   └── style.css
-│── image/
-│   └── angelo.jpg
-│── index.html
-└── README.md
-```
+- **Angelo Silvano** - *Desenvolvedor Front-end* - [angelodesenvolvedor](https://github.com/angelodesenvolvedor)
 
 ## 📄 Licença
 
 - Esse projeto está sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
 
-## 👷 Autor
-
-- **Angelo Silvano** - Desenvolvedor Front-end - [GitHub](https://github.com/angelodesenvolvedor)
 
