@@ -27,7 +27,7 @@ Antes de iniciar, certifique-se de ter os seguintes requisitos instalados:
 ## 📦 Tecnologias usadas
 
 - HTML5
-- TailwindCSS
+- ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 - FontAwesome
 
 ## 👷 Autor
