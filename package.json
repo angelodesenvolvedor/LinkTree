@@ -1,0 +1,23 @@
+{
+  "name": "linktree",
+  "version": "1.0.0",
+  "description": "Minha página LinkTree com links para minhas redes sociais, portfólio e mais. Conecte-se comigo!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelodesenvolvedor/LinkTree.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelodesenvolvedor/LinkTree/issues"
+  },
+  "homepage": "https://github.com/angelodesenvolvedor/LinkTree#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.0.17"
+  }
+}
