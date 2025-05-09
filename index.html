@@ -8,38 +8,40 @@
   <meta name="description" content="Minha página LinkTree com links para minhas redes sociais, portfólio e mais. Conecte-se comigo!">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔗</text></svg>">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/script.js" defer></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 </head>
-<body class="flex flex-col items-center min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white p-6">
-  <div class="bg-gray-800 p-8 rounded-3xl shadow-2xl text-center w-full max-w-md border border-gray-700 transform transition-all hover:scale-105 hover:shadow-xl">
+<body class="flex flex-col items-center min-h-screen bg-gradient-to-b from-purple-900 to-indigo-900 text-white p-6">
+  <div class="bg-gradient-to-br from-indigo-800 to-purple-800 p-8 rounded-3xl shadow-2xl text-center w-full max-w-md border border-indigo-600 transform transition-all hover:scale-105 hover:shadow-2xl">
       <div class="image-container">
         <a href="" target="_blank" class="block focus:outline-none">
             <img
             src="./image/angelo.png"
             alt="Avatar de Angelo Silvano"
-            class="rounded-full w-40 h-40 border-4 border-gray-500 shadow-lg hover:scale-110 transition-transform duration-300 hover:border-gray-400"
+            class="rounded-full w-40 h-40 border-4 border-indigo-500 shadow-lg hover:scale-110 transition-transform duration-300 hover:border-purple-400"
+            style="box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);"
             />
         </a>
     </div>
-    <h1 class="mt-4 text-3xl font-extrabold text-gray-100">Angelo Silvano</h1>
-    <p class="text-gray-300 mt-1 text-lg">Front-end Developer | React & TypeScript</p>
+    <h1 class="mt-4 text-3xl font-extrabold text-white drop-shadow-md">Angelo Silvano</h1>
+    <p class="text-indigo-200 mt-1 text-lg">Front-end Developer | React & TypeScript</p>
     <div class="mt-6 space-y-4">
-        <a href="https://github.com/angelosilvanno" target="_blank" class="flex items-center justify-center bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 rounded-xl shadow-md transition-transform hover:scale-105 gap-3">
+        <a href="https://github.com/angelosilvanno" target="_blank" class="flex items-center justify-center bg-indigo-700 hover:bg-indigo-600 text-white font-medium py-3 rounded-xl shadow-lg transition-all hover:scale-105 gap-3">
             <i class="fab fa-github text-2xl"></i> <span>GitHub</span>
         </a>
-        <a href="https://www.linkedin.com/in/angelosilvanno/" target="_blank" class="flex items-center justify-center bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 rounded-xl shadow-md transition-transform hover:scale-105 gap-3">
+        <a href="https://www.linkedin.com/in/angelosilvanno/" target="_blank" class="flex items-center justify-center bg-indigo-700 hover:bg-indigo-600 text-white font-medium py-3 rounded-xl shadow-lg transition-all hover:scale-105 gap-3">
             <i class="fab fa-linkedin text-2xl"></i> <span>LinkedIn</span>
         </a>
-      <a href="https://angelosilvannodev.vercel.app/" target="_blank" class="flex items-center justify-center bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 rounded-xl shadow-md transition-transform hover:scale-105 gap-3">
+      <a href="https://angelosilvannodev.vercel.app/" target="_blank" class="flex items-center justify-center bg-indigo-700 hover:bg-indigo-600 text-white font-medium py-3 rounded-xl shadow-lg transition-all hover:scale-105 gap-3">
           <i class="fas fa-globe text-2xl"></i> <span>Portfólio</span>
       </a>
-        <a href="mailto:angeloestudante1@gmail.com" target="_blank" class="flex items-center justify-center bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 rounded-xl shadow-md transition-transform hover:scale-105 gap-3">
+        <a href="mailto:angeloestudante1@gmail.com" target="_blank" class="flex items-center justify-center bg-indigo-700 hover:bg-indigo-600 text-white font-medium py-3 rounded-xl shadow-lg transition-all hover:scale-105 gap-3">
            <i class="fas fa-envelope text-2xl"></i> <span>Contato</span>
       </a>
     </div>
   </div>
-    <footer class="mt-8 text-gray-400 text-sm">
-        © 2025 Angelo Silvano. Todos os direitos reservados.
+    <footer class="mt-8 text-indigo-200 text-sm">
+        © <span id="ano-atual"></span> Angelo Silvano. Todos os direitos reservados.
     </footer>
 </body>
 </html>
