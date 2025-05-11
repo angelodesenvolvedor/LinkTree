@@ -1,128 +1,127 @@
+/* style.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ajustes no body */
 body {
-    background: linear-gradient(135deg, #1a1b1f, #262c38, #1a1b1f);
-    background-size: 400% 400%;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: gradientAnimation 20s ease infinite;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Fira Code', monospace;
-    color: #e2e8f0;
-    padding: 2rem 1rem;
-    box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+  background-color: #18181b; /* zinc-900 */
+  color: #f4f4f5; /* zinc-100 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.5rem;
 }
 
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+/* Card principal */
+div.bg-zinc-800 {
+  background-color: #27272a;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #3f3f46;
+  text-align: center;
 }
 
-.text-gray-200 {
-    color: #e2e8f0;
-}
-
-.text-gray-400 {
-    color: #94a3b8;
-}
-
-.btn-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.75rem 1rem;
-    background-color: #2a2e3a;
-    border: 1px solid #3f475c;
-    border-radius: 8px;
-    color: #e2e8f0;
-    transition: all 0.3s ease;
-    width: 100%;
-    text-align: center;
-}
-
-.btn-icon:hover {
-    background-color: #3a3f51;
-    transform: scale(1.05);
-    box-shadow: 0 0 0 2px #6366f1;
-}
-
-.btn-icon i {
-    font-size: 1.3em;
-    margin-right: 10px;
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
+/* Imagem de perfil */
 .image-container img {
-    object-fit: cover;
-    border-radius: 100%;
-    border: 3px solid #4c4f58;
-    width: 150px;
-    height: 150px;
-    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
-    transition: transform 0.3s ease;
+  width: 144px;
+  height: 144px;
+  border-radius: 9999px;
+  border: 2px solid #52525b;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
 }
 
 .image-container img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(147, 51, 234, 0.6);
+  transform: scale(1.05);
 }
 
+/* Nome */
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f4f4f5;
+}
+
+/* Subtítulo */
+p.text-zinc-400 {
+  color: #a1a1aa;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+/* Links */
+.mt-6 {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos específicos por cor (herdado do Tailwind) */
+.bg-zinc-700 { background-color: #3f3f46; }
+.bg-zinc-700:hover { background-color: #52525b; }
+
+.bg-blue-700 { background-color: #1d4ed8; }
+.bg-blue-700:hover { background-color: #2563eb; }
+
+.bg-rose-600 { background-color: #e11d48; }
+.bg-rose-600:hover { background-color: #f43f5e; }
+
+/* Footer */
 footer {
-    margin-top: 3rem;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: #71717a;
+  text-align: center;
 }
 
-.footer-text-color {
-    color: #94a3b8;
-    font-size: 0.875rem;
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.footer-text-color a {
-    color: #6366f1;
-    text-decoration: none;
-}
-
+/* Responsividade (mesmo já tá bem mobile-first, mas vamos garantir) */
 @media (max-width: 480px) {
-    .btn-icon {
-        font-size: 0.9rem;
-        padding: 0.6rem 0.8rem;
-    }
+  div.bg-zinc-800 {
+    padding: 1.5rem;
+  }
 
-    .image-container img {
-        width: 120px;
-        height: 120px;
-    }
+  .image-container img {
+    width: 120px;
+    height: 120px;
+  }
 
-    .footer-text-color {
-        font-size: 0.75rem;
-    }
-}
-@media (max-width: 768px) {
-    .btn-icon {
-        font-size: 1rem;
-        padding: 0.7rem 0.9rem;
-    }
+  h1 {
+    font-size: 1.25rem;
+  }
 
-    .image-container img {
-        width: 130px;
-        height: 130px;
-    }
+  p.text-zinc-400 {
+    font-size: 0.75rem;
+  }
 
-    .footer-text-color {
-        font-size: 0.8rem;
-    }
+  a {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
 }
